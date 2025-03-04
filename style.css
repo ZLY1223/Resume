@@ -53,11 +53,16 @@ h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
+.research ul {
+    list-style: disc;
+    text-align: left;
+    padding-left: 20px;
+}
 
 /* 项目内容 */
 .project-item {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    max-width: 700px;
+    margin: auto;
     padding-bottom: 15px;
 }
 
@@ -80,6 +85,10 @@ h3 {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.resume {
+    margin-top: 40px;
 }
 
 .btn:hover {
