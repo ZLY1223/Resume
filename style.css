@@ -18,6 +18,7 @@ body {
     background: white;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
+    min-height: 100vh; /* 让 container 至少等于整个视口高度 */
 }
 
 /* 侧边栏 */
@@ -32,9 +33,9 @@ body {
     justify-content: flex-start; /* 让内容从上往下排列 */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    min-height: 100%; /* 让 sidebar 填满 container */
+    height: auto; /* 让 sidebar 自适应内容 */
+    min-height: 100vh; /* 强制 sidebar 充满整个视口高度 */
 }
-
 
 .profile-pic {
     width: 200px;
@@ -54,6 +55,9 @@ body {
 .content {
     width: 70%;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* 引言 */
