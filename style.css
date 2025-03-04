@@ -1,69 +1,90 @@
 /* 全局样式 */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* 灰色背景 */
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-/* 主体框架 */
+/* 主容器：左侧 + 右侧 */
 .container {
-    width: 60%;
-    max-width: 800px;
-    background: none; /* 去掉白色背景 */
-    padding: 30px;
-    text-align: center;
+    display: flex;
+    width: 75%;
+    max-width: 1100px;
+    margin-top: 40px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* 头像 */
+/* 左侧栏 */
+.sidebar {
+    width: 30%;
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
 }
 
-/* 标题 */
-h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-h2 {
+.sidebar h1 {
     font-size: 22px;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-h3 {
-    font-size: 18px;
-    margin-top: 15px;
+.sidebar p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin: 5px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* 右侧内容 */
+.content {
+    width: 70%;
+    padding: 30px;
 }
 
 /* 研究方向 */
 .research, .projects, .resume {
-    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
 }
+
 .research ul {
     list-style: disc;
     text-align: left;
     padding-left: 20px;
 }
 
-/* 项目内容 */
+/* 项目部分 */
 .project-item {
-    max-width: 700px;
-    margin: auto;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .project-item h3 {
@@ -85,10 +106,6 @@ h3 {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
-}
-
-.resume {
-    margin-top: 40px;
 }
 
 .btn:hover {
