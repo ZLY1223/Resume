@@ -65,6 +65,22 @@ body {
     padding: 30px;
 }
 
+/* 引入部分 */
+.intro {
+    background: #fff5e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro p {
+    margin-bottom: 10px;
+}
+
 /* 研究方向 */
 .research, .projects, .resume {
     margin-bottom: 30px;
