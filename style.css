@@ -1,77 +1,85 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    width: 60%;
-    margin: 40px auto;
+    display: flex;
+    width: 70%;
+    margin-top: 40px;
     background: white;
-    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 左侧侧边栏 */
+.sidebar {
+    width: 30%;
+    background: #f8f9fa;
+    padding: 20px;
     text-align: center;
+    border-right: 1px solid #ddd;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* 调整列表对齐 */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    text-align: left;
-    margin: 5px 0;
-    padding-left: 20px;
-    position: relative;
-}
-
-ul li::before {
-    content: "•";
-    color: #007bff;
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-    top: 2px;
-}
-
-/* 个人照片样式 */
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 10px auto;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    margin: 10px 0;
+}
+
+.sidebar p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
     display: block;
-    border: 3px solid #007bff;
+    margin: 5px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* 右侧主体内容 */
+.content {
+    width: 70%;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
 }
 
 .btn:hover {
