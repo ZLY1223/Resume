@@ -3,54 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liyue Zhang | Personal Website</title>
+    <title>Liyue Zhang | Health Informatics Researcher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <!-- 左侧导航栏 -->
-    <aside class="sidebar">
+    <!-- 个人头像 -->
+    <div class="profile">
         <img src="profile.jpg" alt="Liyue Zhang" class="profile-pic">
-        <h2>Liyue Zhang</h2>
+        <h1>Liyue Zhang</h1>
         <p>MSE in Systems Engineering @ JHU</p>
         <p>📍 Baltimore, MD</p>
-        <a href="mailto:lzhan261@jh.edu">📧 lzhan261@jh.edu</a>
-        <div class="social-links">
-            <a href="https://github.com/zly1223">GitHub</a>
-            <a href="https://www.linkedin.com/in/liyuezhang">LinkedIn</a>
+        <p>📧 <a href="mailto:lzhan261@jh.edu">lzhan261@jh.edu</a></p>
+        <p><a href="https://github.com/zly1223">GitHub</a> | <a href="https://www.linkedin.com/in/liyuezhang">LinkedIn</a></p>
+    </div>
+
+    <!-- 研究方向 -->
+    <section class="research">
+        <h2>Research Interests</h2>
+        <p>My research focuses on <strong>Health Informatics</strong>, specifically in leveraging <strong>system modeling</strong> and <strong>machine learning</strong> to optimize public health interventions, improve resource allocation, and enhance disease surveillance.</p>
+    </section>
+
+    <!-- 项目 -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>LLM-based Simulation of Vaccine Attitudes</h3>
+            <p>Developed a simulation framework utilizing large language models (LLMs) to predict vaccine hesitancy patterns based on demographic and psychological factors. This model aims to inform targeted public health messaging strategies.</p>
         </div>
-    </aside>
 
-    <!-- 右侧主体内容 -->
-    <main class="content">
-        <section>
-            <h1>Hi, I'm Liyue! 👋</h1>
-            <p>I'm a graduate student in Systems Engineering at Johns Hopkins University. My research focuses on using system modeling and machine learning to address public health challenges.</p>
-        </section>
+        <div class="project-item">
+            <h3>Multi-Pathogen Hospitalization Forecasting</h3>
+            <p>Built a forecasting model integrating time-series epidemiological data to predict hospitalization rates across multiple infectious diseases. Used machine learning techniques like LSTM and ARIMA for accurate predictions.</p>
+        </div>
 
-        <section>
-            <h2>Research & Projects</h2>
-            <ul>
-                <li>LLM-based Simulation of Vaccine Attitudes</li>
-                <li>Multi-Pathogen Hospitalization Forecasting</li>
-                <li>Disruptive Technology Identification</li>
-            </ul>
-        </section>
+        <div class="project-item">
+            <h3>Disruptive Technology Identification via Multi-Source Data Fusion</h3>
+            <p>Designed a framework combining **scientific publications, patents, and research grants** using **SBERT and Dynamic Topic Modeling (DTM)** to identify emerging technologies in hydrogen energy storage.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Recent News</h2>
-            <ul>
-                <li>📜 Paper accepted at NeurIPS 2025!</li>
-                <li>🎤 Invited speaker at AI4Health Workshop</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>📄 Download Resume</h2>
-            <a href="LiyueZhang_Resume.pdf" class="btn">Download PDF</a>
-        </section>
-    </main>
+    <!-- 简历下载 -->
+    <section class="resume">
+        <h2>📄 Download Resume</h2>
+        <a href="LiyueZhang_Resume.pdf" class="btn">Download PDF</a>
+    </section>
 </div>
 
 </body>
