@@ -11,7 +11,7 @@ body {
 /* 主容器 */
 .container {
     display: flex;
-    width: 80%;
+    width: 85%; /* 让内容区稍微拉宽 */
     max-width: 1200px;
     margin-top: 40px;
     background: white;
@@ -21,7 +21,7 @@ body {
 
 /* 侧边栏 */
 .sidebar {
-    width: 30%;
+    width: 28%;
     background: #f8f9fa;
     padding: 20px;
     text-align: center;
@@ -43,23 +43,23 @@ body {
 
 /* 右侧内容 */
 .content {
-    width: 70%;
+    width: 72%;
     padding: 30px;
 }
 
 /* 引言 */
 .intro {
     background: #fff8e1;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: justify;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7; /* 增加行间距 */
 }
 
-/* 研究方向 */
+/* 研究方向、项目、荣誉等内容卡片 */
 .research, .projects, .resume {
     margin-bottom: 30px;
     padding: 20px;
@@ -78,7 +78,16 @@ body {
 .project-item {
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* 增加间距 */
+}
+
+.project-item h3 {
+    margin-bottom: 8px;
+}
+
+.project-item p {
+    font-size: 15px;
+    line-height: 1.7; /* 让文本行间距更舒适 */
 }
 
 /* 荣誉和奖励 */
@@ -91,7 +100,7 @@ body {
 }
 
 .honors ul {
-    list-style-type: disc; /* 改为带小圆点 */
+    list-style-type: disc;
     padding-left: 20px;
 }
 
