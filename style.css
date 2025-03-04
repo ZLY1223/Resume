@@ -1,78 +1,67 @@
+/* 全局样式 */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* 灰色背景 */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+/* 主体框架 */
 .container {
-    display: flex;
-    width: 70%;
-    margin-top: 40px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-/* 左侧侧边栏 */
-.sidebar {
-    width: 30%;
-    background: #f8f9fa;
-    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    background: none; /* 去掉白色背景 */
+    padding: 30px;
     text-align: center;
-    border-right: 1px solid #ddd;
 }
 
+/* 头像 */
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
 }
 
-.sidebar h2 {
+/* 标题 */
+h1 {
+    font-size: 24px;
     margin: 10px 0;
 }
 
-.sidebar p {
-    color: #666;
-    margin: 5px 0;
+/* 研究方向 */
+.research, .projects, .resume {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.sidebar a {
-    text-decoration: none;
-    color: #007bff;
-    display: block;
-    margin: 5px 0;
+/* 项目内容 */
+.project-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
 }
 
-.social-links a {
-    display: inline-block;
-    margin: 5px;
+.project-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-/* 右侧主体内容 */
-.content {
-    width: 70%;
-    padding: 30px;
+.project-item p {
+    font-size: 14px;
+    color: #555;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
+/* 按钮 */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -80,6 +69,7 @@ ul li {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .btn:hover {
