@@ -80,6 +80,29 @@ body {
     margin-bottom: 15px;
 }
 
+/* 荣誉和奖励 */
+.honors {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.honors ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.honors li {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.honors li strong {
+    color: #007bff;
+}
+
 /* 按钮 */
 .btn {
     display: inline-block;
