@@ -9,49 +9,53 @@
 <body>
 
 <div class="container">
-    <!-- 个人头像 -->
-    <div class="profile">
-        <img src="profile.jpg" alt="Liyue Zhang" class="profile-pic">
+    <!-- 左侧：个人信息 -->
+    <aside class="sidebar">
+        <img src="images/profile.jpg" alt="Liyue Zhang" class="profile-pic">
         <h1>Liyue Zhang</h1>
         <p>MSE in Systems Engineering @ JHU</p>
         <p>📍 Baltimore, MD</p>
         <p>📧 <a href="mailto:lzhan261@jh.edu">lzhan261@jh.edu</a></p>
-    </div>
-
-    <!-- 研究方向 -->
-    <section class="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li><strong>Health Informatics:</strong> Applying data-driven approaches to optimize healthcare decision-making.</li>
-            <li><strong>System Modeling:</strong> Developing computational models for public health interventions.</li>
-            <li><strong>Machine Learning:</strong> Enhancing disease surveillance and resource allocation using AI.</li>
-        </ul>
-    </section>
-
-    <!-- 项目 -->
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>LLM-based Simulation of Vaccine Attitudes</h3>
-            <p>Developed an LLM-powered framework to model vaccine hesitancy, leveraging demographic and psychological factors to optimize public health messaging.</p>
+        <div class="social-links">
+            <a href="https://github.com/zly1223">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/liyuezhang">LinkedIn</a>
         </div>
+    </aside>
 
-        <div class="project-item">
-            <h3>Multi-Pathogen Hospitalization Forecasting</h3>
-            <p>Built a forecasting model integrating time-series epidemiological data to predict hospitalization rates across multiple infectious diseases. Used machine learning techniques like LSTM and ARIMA for accurate predictions.</p>
-        </div>
+    <!-- 右侧：主要内容 -->
+    <main class="content">
+        <section class="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li><strong>Health Informatics:</strong> Applying data-driven approaches to optimize healthcare decision-making.</li>
+                <li><strong>System Modeling:</strong> Developing computational models for public health interventions.</li>
+                <li><strong>Machine Learning:</strong> Enhancing disease surveillance and resource allocation using AI.</li>
+            </ul>
+        </section>
 
-        <div class="project-item">
-            <h3>Disruptive Technology Identification via Multi-Source Data Fusion</h3>
-            <p>Designed a framework combining **scientific publications, patents, and research grants** using **SBERT and Dynamic Topic Modeling (DTM)** to identify emerging technologies in hydrogen energy storage.</p>
-        </div>
-    </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>LLM-based Simulation of Vaccine Attitudes</h3>
+                <p>Developed an LLM-powered framework to model vaccine hesitancy, leveraging demographic and psychological factors to optimize public health messaging.</p>
+            </div>
 
-    <!-- 简历下载 -->
-    <section class="resume">
-        <h2>📄 Download Resume</h2>
-        <a href="LiyueZhang_Resume.pdf" class="btn">Download PDF</a>
-    </section>
+            <div class="project-item">
+                <h3>Multi-Pathogen Hospitalization Forecasting</h3>
+                <p>Built a forecasting model integrating time-series epidemiological data to predict hospitalization rates across multiple infectious diseases. Used machine learning techniques like LSTM and ARIMA for accurate predictions.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Disruptive Technology Identification via Multi-Source Data Fusion</h3>
+                <p>Designed a framework combining **scientific publications, patents, and research grants** using **SBERT and Dynamic Topic Modeling (DTM)** to identify emerging technologies in hydrogen energy storage.</p>
+            </div>
+        </section>
+
+        <section class="resume">
+            <h2>📄 Download Resume</h2>
+            <a href="LiyueZhang_Resume.pdf" class="btn">Download PDF</a>
+        </section>
+    </main>
 </div>
 
 </body>
