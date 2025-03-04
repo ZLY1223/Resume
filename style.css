@@ -23,7 +23,7 @@ body {
 
 /* 侧边栏 */
 .sidebar {
-    width: 25%;
+    width: 20%;
     background: white;
     padding: 20px;
     text-align: center;
@@ -52,7 +52,7 @@ body {
 
 /* 右侧内容 */
 .content {
-    width: 75%;
+    width: 80%;
     padding: 40px;
     display: flex;
     flex-direction: column;
