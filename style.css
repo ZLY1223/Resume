@@ -12,7 +12,7 @@ body {
 .container {
     display: flex;
     align-items: stretch; /* 让 .sidebar 和 .content 保持同样高度 */
-    width: 95%;
+    width: 65%;
     max-width: 1200px;
     margin-top: 40px;
     background: white;
