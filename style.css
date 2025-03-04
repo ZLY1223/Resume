@@ -24,8 +24,8 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #007bff;
-    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* 标题 */
