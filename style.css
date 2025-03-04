@@ -24,17 +24,16 @@ body {
 /* 侧边栏 */
 .sidebar {
     width: 30%;
-    background: white; /* 确保背景颜色和主容器一致 */
+    background: white;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* 让内容从上往下排列 */
+    justify-content: flex-start;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: auto; /* 让 sidebar 自适应内容 */
-    min-height: 100vh; /* 强制 sidebar 充满整个视口高度 */
+    flex-grow: 1; /* 让 sidebar 根据 container 自动扩展 */
 }
 
 .profile-pic {
@@ -58,6 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-grow: 1; /* 让 content 也自动填充 */
 }
 
 /* 引言 */
