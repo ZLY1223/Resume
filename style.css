@@ -60,7 +60,7 @@ body {
 }
 
 /* 研究方向 */
-.research, .projects, .resume {
+.projects, .resume {
     margin-bottom: 30px;
     padding: 20px;
     background: white;
